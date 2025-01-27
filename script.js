@@ -44,14 +44,14 @@ const GameController = (() => {
         if (checkWinner()) {
             gameOver = true;
             document.getElementById('gameStatus').textContent = `${currentPlayer.getName()} wins!`;
-            document.getElementById('gameStatus').style.color = currentPlayer.getMarker() === 'X' ? '#e74c3c' : '#2ecc71';
+            document.getElementById('gameStatus').style.color = currentPlayer.getMarker() === 'X' ? 'black' : 'black';
             return;
         }
 
         if (checkTie()) {
             gameOver = true;
             document.getElementById('gameStatus').textContent = "It's a tie!";
-            document.getElementById('gameStatus').style.color = '#3498db';
+            document.getElementById('gameStatus').style.color = 'black';
             return;
         }
 
